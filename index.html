@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rush attack</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/common-pixel" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Play" />
+    <link rel="preload" as="script" href="script.js">
+</head>
+<header>
+    <h1 class="colorstyle">Rush attack</h1>
+</header>
+
+<body>
+    <div class="notice">
+        <p class="notice">PRESS THE CORRESPONDING LETTERS!</p>
+        <p >IF YOU PRESS ANY(!!) OTHER KEY IT'S OVER FOR YOU!</p>
+    </div>
+
+    <div id="start">
+        <button onclick="timer()" class="button">Start</button>
+    </div>
+
+
+    <div id="score"></div>
+    
+    <div id="limit">
+        <div id="QTE">a</div>
+    </div>
+
+    <div id="stopwatch"></div>
+
+    <div id="box_gif">
+        <img id="gif" src="" alt="rat">
+    </div>
+
+    <div id="restart" class="button">
+        <button onclick="window.location.reload()">Restart</button>
+    </div>
+    <p id="songname" class="colorstyle"></p>
+    <button id="stop" class="button">Music</button>
+    <script src="script.js"></script>
+</body>
+
+<footer>
+</footer>
+</html>

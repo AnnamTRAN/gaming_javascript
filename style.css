@@ -1,0 +1,76 @@
+body{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.colorstyle{
+    text-align: center;
+    font-family: 'Common Pixel', sans-serif;
+
+    background: -webkit-linear-gradient(#95d7e3, #eb76ff );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: colorchange 2s linear infinite alternate;
+}
+
+@keyframes colorchange {
+    from {
+      filter: hue-rotate(0deg);      
+    }
+    to {
+      filter: hue-rotate(360deg);      
+    }
+  }
+
+button{
+    font-size: 50px;
+    margin-top: 40px;
+    font-family: 'Common Pixel', sans-serif;
+    background: -webkit-linear-gradient(#eaff00, #068ab7);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#start, #restart{
+    text-align: center;
+}
+
+#score, #stopwatch, .notice{
+    text-align: center;
+    font-family: 'Common Pixel', sans-serif;
+    background: -webkit-linear-gradient(#F1A7F1, #FAD0C4);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#limit, #score, #restart, #gif{
+    display: none;
+}
+
+#QTE{
+    height: 300px;
+    width: 100%;
+    font-size: 40px;
+    color: white;
+    position: relative;
+    transition: all 0.4s;
+}
+
+#limit{
+    font-family: Comic Sans MS;
+    font-size: 25px;
+}
+
+#stopwatch, #restart{
+    margin-top: 50px;
+}
+
+#box_gif{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
