@@ -55,7 +55,7 @@ const game = (event) =>{
 
         music.pause()
         music = new Audio("music/marvins.mp3")
-        music.volume = 0.1
+        music.volume = 0.5
         music.play()
         songname.innerHTML = "Playing: Drake - Marvins Room"
         music.loop = true
@@ -106,7 +106,7 @@ const timer = () =>{
     notice.forEach(p => p.style.display ="none")
     songname.classList.add("colorstyle")
     music.play()
-    music.volume = 0.1
+    music.volume = 0.5
 
     if (randomSong === playlist[0]){
         songname.innerHTML = "Playing: Hideki Naganuma - AIN'T NOTHIN' LIKE A FUNKY BEAT"
@@ -125,7 +125,7 @@ const timer = () =>{
 
 /* music on or off */
 stop.addEventListener("click", (event) => {
-    if (music.volume === 0.1){ 
+    if (music.volume === 0.5){ 
         music.volume = 0
         stop.style.background = "-webkit-linear-gradient(#403A3E, #BE5869)"
         stop.style.webkitBackgroundClip = "text"
@@ -134,7 +134,7 @@ stop.addEventListener("click", (event) => {
 
     }
     else{
-        music.volume = 0.1
+        music.volume = 0.5
         stop.style.background = "-webkit-linear-gradient(#eaff00, #068ab7)"
         stop.style.webkitBackgroundClip = "text"
         stop.style.backgroundClip = "text"
